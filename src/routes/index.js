@@ -18,4 +18,8 @@ router.get("/adopt", (req, res) => { //se establece la ruta http://localhost:300
     res.render("adopt");
 });
 
+router.get("/services", (req, res) => { //se establece la ruta http://localhost:3000/services
+    res.render("services");
+});
+
 export default router; //se exporta la caracteristica router

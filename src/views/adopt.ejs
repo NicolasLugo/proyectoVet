@@ -5,61 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopción</title>
-    <%- include ('partials/head') %>
+    <%- include ('partials/head') %> <!-- se incluye el head hecho en el archivo head.ejs -->
 </head>
 
 <body>
-    <%- include ('partials/nav') %>
-        <h2>ESTA ES LA PÁGINA DE ADOPCIÓN</h2>
-        <div class="card" style="display:inline-block ;width: 18rem;">
-            <img src="img/Bojack Horseman frente a una ventana_xtrafondos.com.jpg" class="card-img-top" alt="Bojack?">
-            <div class="card-body">
-                <h5 class="card-title">Coco</h5>
-                <p class="card-text">Hermosa labrador chocolate</p>
-                <a href="#" class="btn btn-primary">Lo quiero!</a>
+    <%- include ('partials/nav') %> <!-- se incluye la navegación hecha en el archivo nav.ejs -->
+        <header class="__header">
+            <h2>ADOPCIÓn</h2>
+            <p>Estos son algunos de los perritos que tenemos en adopción. Si te interesa alguno, ¡no dudes en contactarnos!</p>    
+        </header>
+
+        <section class="cards" style="display:flex; flex-wrap: wrap; gap: 1rem;">
+            <div class="card" style="width: 18rem;">
+                <img src="img/labrador_chocolate.jpg" class="card-img-top" alt="labrador_chocolate">
+                <div class="card-body">
+                    <h5 class="card-title">Coco</h5>
+                    <p class="card-text">Labrador Chocolate - 1 año</p>
+                    <a href="#" class="btn btn-primary">Lo quiero!</a>
+                </div>
             </div>
-        </div>
-        <div class="card" style="display:inline-block ;width: 18rem;">
-            <img src="img/Bojack Horseman frente a una ventana_xtrafondos.com.jpg" class="card-img-top" alt="Bojack?">
-            <div class="card-body">
-                <h5 class="card-title">Coco</h5>
-                <p class="card-text">Hermosa labrador chocolate</p>
-                <a href="#" class="btn btn-primary">Lo quiero!</a>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/labrador_retriver.jpg" class="card-img-top" alt="labrador_retriver">
+                <div class="card-body">
+                    <h5 class="card-title">Zoey</h5>
+                    <p class="card-text">Labrador Retriever - 5 años</p>
+                    <a href="#" class="btn btn-primary">Lo quiero!</a>
+                </div>
             </div>
-        </div>
-        <div class="card" style="display:inline-block ;width: 18rem;">
-            <img src="img/Bojack Horseman frente a una ventana_xtrafondos.com.jpg" class="card-img-top" alt="Bojack?">
-            <div class="card-body">
-                <h5 class="card-title">Coco</h5>
-                <p class="card-text">Hermosa labrador chocolate</p>
-                <a href="#" class="btn btn-primary">Lo quiero!</a>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/chihuahua.jpg" class="card-img-top" alt="chihuahua">
+                <div class="card-body">
+                    <h5 class="card-title">Rocky</h5>
+                    <p class="card-text">Chihuahua - 7 años</p>
+                    <a href="#" class="btn btn-primary">Lo quiero!</a>
+                </div>
             </div>
-        </div>
-        <div class="card" style="display:inline-block ;width: 18rem;">
-            <img src="img/Bojack Horseman frente a una ventana_xtrafondos.com.jpg" class="card-img-top" alt="Bojack?">
-            <div class="card-body">
-                <h5 class="card-title">Coco</h5>
-                <p class="card-text">Hermosa labrador chocolate</p>
-                <a href="#" class="btn btn-primary">Lo quiero!</a>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/dalmata.jpg" class="card-img-top" alt="dalmata">
+                <div class="card-body">
+                    <h5 class="card-title">Daisy</h5>
+                    <p class="card-text">Dálmata - 6 meses</p>
+                    <a href="#" class="btn btn-primary">Lo quiero!</a>
+                </div>
             </div>
-        </div>
-        <div class="card" style="display:inline-block ;width: 18rem;">
-            <img src="img/Bojack Horseman frente a una ventana_xtrafondos.com.jpg" class="card-img-top" alt="Bojack?">
-            <div class="card-body">
-                <h5 class="card-title">Coco</h5>
-                <p class="card-text">Hermosa labrador chocolate</p>
-                <a href="#" class="btn btn-primary">Lo quiero!</a>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/pomerania.jpg" class="card-img-top" alt="pomerania">
+                <div class="card-body">
+                    <h5 class="card-title">Duke</h5>
+                    <p class="card-text">Pomerania - 1.5 años</p>
+                    <a href="#" class="btn btn-primary">Lo quiero!</a>
+                </div>
             </div>
-        </div>
-        <div class="card" style="display:inline-block ;width: 18rem;">
-            <img src="img/Bojack Horseman frente a una ventana_xtrafondos.com.jpg" class="card-img-top" alt="Bojack?">
-            <div class="card-body">
-                <h5 class="card-title">Coco</h5>
-                <p class="card-text">Hermosa labrador chocolate</p>
-                <a href="#" class="btn btn-primary">Lo quiero!</a>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/bulldog-ingles.jpg" class="card-img-top" alt="bulldog-ingles">
+                <div class="card-body">
+                    <h5 class="card-title">Sadie</h5>
+                    <p class="card-text">Bulldog Inglés - 5 años</p>
+                    <a href="#" class="btn btn-primary">Lo quiero!</a>
+                </div>
             </div>
-        </div>
-        <%- include ('partials/footer') %>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/yorkshire-terrier.jpg" class="card-img-top" alt="yorkshire-terrier">
+                <div class="card-body">
+                    <h5 class="card-title">Bruno</h5>
+                    <p class="card-text">Yorkshire Terrier - 6 meses</p>
+                    <a href="#" class="btn btn-primary">Lo quiero!</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/shih-tzu.jpg" class="card-img-top" alt="shih-tzu">
+                <div class="card-body">
+                    <h5 class="card-title">Ginger</h5>
+                    <p class="card-text">Shih Tzu - 1 año</p>
+                    <a href="#" class="btn btn-primary">Lo quiero!</a>
+                </div>
+            </div>
+        </section>
+        
+        <%- include ('partials/footer') %> <!-- se incluye el footer hecho en el archivo footer.ejs -->
 </body>
 
 </html>

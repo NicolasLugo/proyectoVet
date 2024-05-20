@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <%- include ('partials/head') %> <!-- se incluye el head hecho en el archivo head.ejs -->
+</head>
+
+<body>
+    <%- include ('partials/nav') %> <!-- se incluye la navegación hecha en el archivo nav.ejs -->
+
+    <header class="__header">
+        <h2>Servicios</h2>
+        <p>Estos son algunos de los servicios que ofrecemos en nuestra clínica veterinaria. Si te interesa alguno, ¡no dudes en contactarnos!</p>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/consulta-vet.jpg" class="d-block w-100" alt="consulta-vet">
+                <div class="carousel-caption d-none d-md-block" style="background-color: rgb(99, 95, 95); border-radius: 10% 20%;">
+                    <h5>Consulta Médica</h5>
+                    <p>Agenda tu hora con profesionales especializados</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/img/analisis-lab-vet.jpg" class="d-block w-100" alt="analisis-lab-vet">
+                <div class="carousel-caption d-none d-md-block" style="background-color: rgb(99, 95, 95);  border-radius: 20% 10%;">
+                    <h5>Análisis de Laboratorio</h5>
+                    <p>Cobertura de todos los tipos exámenes</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/img/odonto-vet.jpg" class="d-block w-100" alt="odonto-vet">
+                <div class="carousel-caption d-none d-md-block" style="background-color: rgb(99, 95, 95); border-radius: 10% 20%;">
+                    <h5>Odontología</h5>
+                    <p>Que la sonrisa de tu amigo siga igual de hermosa</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/img/farmacia-vet.jpg" class="d-block w-100" alt="farmacia-vet">
+                <div class="carousel-caption d-none d-md-block" style="background-color: rgb(99, 95, 95); border-radius: 20% 10%;">
+                    <h5>Farmacia</h5>
+                    <p>Golosinas para que tu mascota se sienta bien</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/img/peluqueria-vet.jpg" class="d-block w-100" alt="peluqueria-vet">
+                <div class="carousel-caption d-none d-md-block" style="background-color: rgb(99, 95, 95); border-radius: 10% 20%;">
+                    <h5>Peluquería</h5>
+                    <p>Que el estilo acompañe a tu mascota</p>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+    <%- include ('partials/footer') %> <!-- se incluye el footer hecho en el archivo footer.ejs -->
+        
+</body>
+
+</html>
