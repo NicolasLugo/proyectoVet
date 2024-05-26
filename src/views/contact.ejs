@@ -9,9 +9,45 @@
 <body>
     <%- include ('partials/nav') %> <!-- se incluye la navegación hecha en el archivo nav.ejs -->
     <header class="__header">
-        <h2>ESTA ES LA PÁGINA DE CONTACTO</h2> 
-        <p>Estos son algunos de los perritos que tenemos en adopción. Si te interesa alguno, ¡no dudes en contactarnos!</p>    
+        <h2>¿CÓMO CONTACTARNOS</h2>
+        <p>Si tienes alguna duda, sugerencia o simplemente quieres saludarnos, no dudes en contactarnos. Estamos para ayudarte.</p>
     </header>
+
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Completa este formulario</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Formulario de contacto -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <!-- Información de contacto -->
+                    <h4>Información de contacto</h4>
+                    <p><i class="bi bi-geo-alt-fill"></i>Calle Arauco 534</p>
+                    <p><i class="bi bi-telephone-fill"></i> +9 1234 5677</p>
+                    <p><i class="bi bi-envelope-fill"></i> info@perrhijosvet.com</p>
+                    <h4>Horario de atención</h4>
+                    <p>Lunes - Viernes: 8:30 AM - 5:00 PM</p>
+                    <p>Sábados: 9:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <%- include ('partials/footer') %> <!-- se incluye el footer hecho en el archivo footer.ejs -->
 </body>

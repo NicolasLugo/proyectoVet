@@ -9,9 +9,54 @@
 <body>
     <%- include ('partials/nav') %> <!-- se incluye la navegación hecha en el archivo nav.ejs -->
     <header class="__header">
-        <h2>ESTE ES EL ÍNDICE DE LA PÁGINA</h2>
-        <p>Estos son algunos de los perritos que tenemos en adopción. Si te interesa alguno, ¡no dudes en contactarnos!</p>    
+        <h2>PERRHIJOS VETERINARIA</h2>
     </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-4">Bienvenidos a Perrhijos Veterinaria</h1>
+                    <p class="lead">Somos una clínica especializada en el cuidado de tus mejores amigos</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/img/Portada.jpg" alt="Veterinaria" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <!-- Tarjeta de Atención Personalizada -->
+                    <div class="card">
+                        <img src="/img/atencion_especializada.jpg" class="card-img-top" alt="atencion-especializada">
+                        <div class="card-body">
+                            <h5 class="card-title">Atención Especializada</h5>
+                            <p class="card-text">Estamos al tope de nivel en cuestión de especialistas veterinarios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Tarjeta de Instalaciones Modernas -->
+                    <div class="card">
+                        <img src="/img/implementos_medicos.jpg" class="card-img-top" alt="implementos_medicos">
+                        <div class="card-body">
+                            <h5 class="card-title">Tecnología clínica de primera</h5>
+                            <p class="card-text">Aquí no escatimamos en lo mejor de lo mejor, eso incluye nuestros implementos médicos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Tarjeta de Equipo Capacitado -->
+                    <div class="card">
+                        <img src="/img/especialistas_capacitados.jpg" class="card-img-top" alt="especialistas_capacitados">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipo Capacitado</h5>
+                            <p class="card-text">Nuestro equipo está formado por veterinarios altamente capacitados y comprometidos con la salud y el bienestar de tus mascotas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <%- include ('partials/footer') %> <!-- se incluye el footer hecho en el archivo footer.ejs -->
 </body>

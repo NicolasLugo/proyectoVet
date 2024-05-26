@@ -9,9 +9,54 @@
 <body>
     <%- include ('partials/nav') %>
     <header class="__header">
-        <h2>ESTA ES LA PÁGINA ACERCA DE NOSOTROS</h2>
-        <p>En esta página encontrarás información sobre nosotros y nuestro equipo de trabajo.</p>
+        <h2>TRABAJA CON NOSOTROS</h2>
+        <p>¿Quieres formar parte de nuestro increíble equipo de trabajo? completa este formulario y te estaremos contactando</p>
     </header>    
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Administrar Mascotas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Lista de espera para llamada -->
+                    <h3>Lista de espera</h3>
+                    <ul id="listaEspera" class="list-group"></ul>
+                </div>
+                <div class="col-md-6">
+                    <!-- Formulario de registro de postulantes -->
+                    <h3>Formulario de Registro</h3>
+                    <form id="formRegistro">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre del interesado</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo" class="form-label">¿a qué cargo se postula?</label>
+                            <select class="form-select" id="tipo" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="doctor">Doctor(a) Veterinario</option>
+                                <option value="aux. vet">Auxiliar Veterinario</option>
+                                <option value="spec. vet">Especialista Veterinario</option>
+                                <option value="peluq">Peluquero(a) Veterinario</option>
+                                <option value="tec-lab">Técnico de laboratorio</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contacto" class="form-label">Teléfono de contacto</label>
+                            <input type="text" class="form-control" id="contacto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cv" class="form-label">hoja de vida</label>
+                            <input type="file" class="form-control" id="cv" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btnRegistrar">Registrar</button>
+                        <button type="button" class="btn btn-secondary" id="btnActualizar" disabled>Actualizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <%- include ('partials/footer') %>
 </body>
